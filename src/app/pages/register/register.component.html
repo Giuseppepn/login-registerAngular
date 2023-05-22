@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>
+    Registrazione
+  </h1>
+  <div id="cred">
+  <h2> Username </h2>
+  <input type="text" [(ngModel)]="username">
+  <h2> Email </h2>
+  <input type="text" [(ngModel)]="email">
+  <h2> Password </h2>
+  <input type="password" [(ngModel)]="password">
+  <button (click)="registerData()" id="register">Register</button>
+  </div>
+  <div *ngIf="risultato" [ngClass]="{ 'success-message': success, 'error-message': !success }" class="risultato">
+    {{ risultato }}
+  </div>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>
+    Benvenuto alla schermata di Login!
+  </h1>
+  <div id="cred">
+  <h2> Username </h2>
+  <input type="text" [(ngModel)]="username">
+  <h2> Password </h2>
+  <input type="password" [(ngModel)]="password">
+ <button (click)="tryLogin()" id="login">Login</button>
+  </div>
+
+
+  <div *ngIf="error" class="errore">{{ error }}</div>
+
+ <a><i id="register" (click)="formRegister()"> Non sei ancora registrato? Clicca qui!</i></a>
+
+ <a id="avviso1"></a>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
